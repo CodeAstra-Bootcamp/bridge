@@ -8,6 +8,10 @@ body {
   background-color: $dark-color;
 }
 
+* {
+  font-family: $font-family;
+}
+
 header {
   nav.navbar {
     background-color: $primary-color;

@@ -20,8 +20,5 @@ github_username:  jekyll
 # Build settings
 markdown: kramdown
 gems:
-  - jekyll-bootstrap-sass
   - jekyll-coffeescript
-bootstrap:
-  assets: true
 exclude: ["vendor"]
