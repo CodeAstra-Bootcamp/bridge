@@ -3,4 +3,15 @@ title: Team
 permalink: /team/
 layout: default
 ---
-<h1>Team</h1>
+<section id="team">
+  <h1>Meet the Team</h1>
+  <div id="people">
+    {% for person in site.data.people %}<div class="person wow rollIn" data-wow-delay="{{forloop.index0 | modulo:5 | plus:1 | times:0.2}}s">
+        <img src="{{site.baseurl}}/images/people/{{person.avatar}}.jpg" alt="{{person.name}}">
+        <div class="info text-center">
+          <h4>{{person.name}}</h4>
+          <h5>{{person.tag}}</h5>
+        </div>
+      </div>{% endfor %}
+  </div>
+</section>

@@ -1,0 +1,46 @@
+#team {
+  h1 {
+    text-align: center;
+    font-size: 4vw;
+    margin-bottom: 2vw;
+  }
+
+  #people {
+    .person {
+      width: 20%;
+      display: inline-block;
+      position: relative;
+
+      img {
+        width: 100%;
+      }
+
+      .info {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0,0,0,0.4);
+        opacity: 0;
+        @include transition(opacity);
+
+        h4, h5 {
+          background-color: rgba(255,255,255,0.8);
+          color: $dark-color;
+        }
+      }
+
+      &:hover {
+        img {
+          -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+        }
+
+        .info {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
