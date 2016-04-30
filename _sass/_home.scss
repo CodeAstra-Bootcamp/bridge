@@ -89,4 +89,28 @@
       margin: 2em 0;
     }
   }
+
+  .action-buttons {
+    padding: 10vh 0 5vh;
+
+    a {
+      background-color: $primary-color;
+      color: $light-color;
+      width: 10em;
+      transition: background-color 0.3s ease-in;
+
+      &:hover {
+        background-color: $lighter-primary-color;
+      }
+
+      &.learn-more {
+        background-color: $dark-color;
+        margin-right: 1em;
+
+        &:hover {
+          background-color: $lighter-dark-color;
+        }
+      }
+    }
+  }
 }

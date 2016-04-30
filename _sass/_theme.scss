@@ -1,8 +1,9 @@
 $primary-color: #009688;
+$lighter-primary-color: lighten($primary-color, 5%);
 $dark-color: #2c3e50;
 $light-color: #ecf0f1;
 $darker-light-color: #bdc3c7;
-$lighter-dark-color: lighten($dark-color, 15%);
+$lighter-dark-color: lighten($dark-color, 5%);
 
 $font-family: 'Raleway', sans-serif;
 $thin-font-weight: 200;
