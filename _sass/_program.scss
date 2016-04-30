@@ -1,6 +1,7 @@
 #program {
   background-image: url('../images/semi-bg.jpg');
   background-size: 100% auto;
+  border-bottom: 10px solid $light-color;
 
   #sidebar {
     background-color: $dark-color;
@@ -104,7 +105,7 @@
   }
 }
 
-#program1 {
+#tuition {
   padding: 15vh 0;
   background-color: #3498db;
   color: $light-color;

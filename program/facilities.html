@@ -1,0 +1,23 @@
+---
+title: Facilities
+permalink: /program/facilities/
+layout: program
+---
+<section id="facilities">
+  <div class="container">
+    <h2>Facilities</h2>
+    <div class="row">
+      {% for facility in site.data.facilities %}
+        <div class="facility col-sm-6 col-md-4 col-lg-3">
+          <div class="logo-container">
+            <img src="/images/facilities/{{facility.logo}}" alt="{{skill.name}}">
+          </div>
+          <h4>{{facility.name}}</h4>
+          <p>
+            {{facility.tag}}
+          </p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

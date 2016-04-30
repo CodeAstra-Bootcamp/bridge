@@ -1,0 +1,24 @@
+---
+title: Curriculum
+permalink: /program/curriculum/
+layout: program
+---
+<h1>Our Program</h1>
+<section id="learn">
+  <div class="container">
+    <h2>You'll learn</h2>
+    {% for skill in site.data.skills %}
+      <div class="skill row wow fadeIn">
+        <div class="logo-container">
+          <img src="/images/skills/{{skill.logo}}" alt="{{skill.name}}" class="img-responsive">
+        </div>
+        <div class="skill-info">
+          <h4>{{skill.name}}</h4>
+          <p>
+            {{skill.description}}
+          </p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>
