@@ -1,3 +1,45 @@
+#program {
+  background-image: url('../images/semi-bg.jpg');
+  background-size: 100% auto;
+
+  #sidebar {
+    background-color: $dark-color;
+    padding: 2em 0;
+
+    a {
+      color: $light-color;
+      display: block;
+      font-weight: $normal-font-weight;
+      padding: 0.2em 0.5em;
+      background-color: transparent;
+      border-left: 5px solid transparent;
+      transition: background-color 0.3s ease-in;
+
+      &.active {
+        &, &:hover {
+          background-color: $primary-color;
+        }
+      }
+
+      &.sub-link {
+        margin-left: 1em;
+        font-weight: $thin-font-weight;
+      }
+
+      &:hover, &:active, &:focus {
+        text-decoration: none;
+        background-color: $lighter-dark-color;
+        border-left: 5px solid $primary-color;
+      }
+    }
+  }
+
+  #program-content {
+    background-color: $light-color;
+    color: $dark-color;
+  }
+}
+
 #learn {
   padding: 15vh 0;
   background-color: #8e44ad;
@@ -62,7 +104,7 @@
   }
 }
 
-#program {
+#program1 {
   padding: 15vh 0;
   background-color: #3498db;
   color: $light-color;

@@ -1,0 +1,91 @@
+---
+title: Our Program
+permalink: /program/
+layout: default
+---
+<section id="program">
+  <div class="container">
+    <div class="row row-eq-height">
+      <div id="program-content" class="col-md-9 col-md-push-3">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic atque ratione rem omnis repudiandae! Accusantium odit sapiente facere reiciendis vero vitae, repellendus recusandae blanditiis provident, ducimus debitis perspiciatis beatae a.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic atque ratione rem omnis repudiandae! Accusantium odit sapiente facere reiciendis vero vitae, repellendus recusandae blanditiis provident, ducimus debitis perspiciatis beatae a.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic atque ratione rem omnis repudiandae! Accusantium odit sapiente facere reiciendis vero vitae, repellendus recusandae blanditiis provident, ducimus debitis perspiciatis beatae a.</p>
+      </div>
+      <div id="sidebar" class="col-md-3 col-md-pull-9">
+        <a href="" class="main-link active">Overview</a>
+        <a href="" class="sub-link">Intro</a>
+        <a href="" class="sub-link">Whom we take</a>
+        <a href="" class="sub-link">How we learn</a>
+        <a href="" class="main-link">Daily Life</a>
+        <a href="" class="sub-link">Intro</a>
+        <a href="" class="main-link">Curriculum</a>
+        <a href="" class="sub-link">Computational Concepts</a>
+        <a href="" class="sub-link">Software Product Development</a>
+        <a href="" class="sub-link">Value Added Services</a>
+        <a href="" class="main-link">Facilities</a>
+        <a href="" class="main-link">Your First Job</a>
+        <a href="" class="sub-link">What job would I get?</a>
+        <a href="" class="sub-link">Who hires me?</a>
+        <a href="" class="sub-link">Salary?</a>
+        <a href="" class="main-link">Admissions</a>
+        <a href="" class="sub-link">Intro</a>
+        <a href="" class="sub-link">The Process</a>
+        <a href="" class="main-link">Tuition</a>
+        <a href="" class="sub-link">Intro</a>
+        <a href="" class="sub-link">Loan Option</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<h1>Our Program</h1>
+<section id="learn">
+  <div class="container">
+    <h2>You'll learn</h2>
+    {% for skill in site.data.skills %}
+      <div class="skill row wow fadeIn">
+        <div class="logo-container">
+          <img src="/images/skills/{{skill.logo}}" alt="{{skill.name}}" class="img-responsive">
+        </div>
+        <div class="skill-info">
+          <h4>{{skill.name}}</h4>
+          <p>
+            {{skill.description}}
+          </p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section id="facilities">
+  <div class="container">
+    <h2>Facilities</h2>
+    <div class="row">
+      {% for facility in site.data.facilities %}
+        <div class="facility col-sm-6 col-md-4 col-lg-3">
+          <div class="logo-container">
+            <img src="/images/facilities/{{facility.logo}}" alt="{{skill.name}}">
+          </div>
+          <h4>{{facility.name}}</h4>
+          <p>
+            {{facility.tag}}
+          </p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section id="program1">
+  <h2>Program</h2>
+  <dl class="dl-horizontal">
+    <dt>Program Duration</dt>
+    <dd>18 Weeks</dd>
+    <dt>Application Fee</dt>
+    <dd>INR 2,000</dd>
+    <dt>Program Tuition</dt>
+    <dd>INR 10,000,000</dd>
+  </dl>
+</section>
