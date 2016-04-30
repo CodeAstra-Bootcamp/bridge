@@ -56,105 +56,17 @@
     background-size: cover;
     background-attachment: fixed;
 
-    p {
-      text-align: right;
-      font-size: 7vmin;
-      width: 50vw;
-      margin: 0 4vw 0 auto;
-    }
-  }
+    .vcenter {
+      background-color: rgba(0,0,0,0.6);
+      padding: 8vh 0;
 
-  #learn {
-    padding: 15vh 0;
-    background-color: #8e44ad;
-    color: $light-color;
-
-    h2 {
-      text-align: center;
-      font-size: 4vw;
-    }
-
-    .skill {
-      background-color: $light-color;
-      color: $dark-color;
-      margin-top: 30px;
-      border-radius: 4px;
-      padding: 15px;
-      opacity: 0.85;
-      @include transition(opacity);
-
-      &:hover {
-        opacity: 1;
-      }
-
-      .logo-container {
-        width: 100px;
-        float: left;
-        text-align: center;
-      }
-
-      .skill-info {
-        margin-left: 120px;
-
-        h4 {
-          font-size: 3em;
-          color: $primary-color;
-        }
-
-        p {
-          font-size: 1.5em;
-        }
-      }
-    }
-  }
-
-  #facilities{
-    padding: 15vh 0;
-    background-color: #e67e22;
-    color: $light-color;
-
-    h2 {
-      text-align: center;
-      font-size: 4vw;
-      margin-bottom: 2vw;
-    }
-
-    .facility {
-      text-align: center;
-
-      img {
-        height: 100px;
-      }
-    }
-  }
-
-  #program {
-    padding: 15vh 0;
-    background-color: #3498db;
-    color: $light-color;
-    text-align: center;
-
-    h2 {
-      font-size: 4vw;
-      margin-bottom: 2vw;
-    }
-
-    dl {
-      font-size: 2vw;
-      width: 62vw;
-      margin: 0 auto;
-
-      dt {
-        font-weight: $normal-font-weight;
-        width: 30vw;
-        text-align: right;
-      }
-
-      dd {
+      p {
+        color: $light-color;
         font-weight: $thin-font-weight;
-        width: 30vw;
-        margin-left: 32vw;
-        text-align: left;
+        text-align: right;
+        font-size: 5vmin;
+        width: 80vw;
+        margin: 0 auto;
       }
     }
   }
