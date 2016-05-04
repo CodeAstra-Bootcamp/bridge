@@ -60,34 +60,3 @@
     }
   }
 }
-
-#tuition {
-  padding: 15vh 0;
-  background-color: #3498db;
-  color: $light-color;
-  text-align: center;
-
-  h2 {
-    font-size: 4vw;
-    margin-bottom: 2vw;
-  }
-
-  dl {
-    font-size: 2vw;
-    width: 62vw;
-    margin: 0 auto;
-
-    dt {
-      font-weight: $normal-font-weight;
-      width: 30vw;
-      text-align: right;
-    }
-
-    dd {
-      font-weight: $thin-font-weight;
-      width: 30vw;
-      margin-left: 32vw;
-      text-align: left;
-    }
-  }
-}
