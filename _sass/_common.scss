@@ -18,12 +18,6 @@ header {
     border-radius: 0;
     border-bottom: none;
     margin-bottom: 0;
-    opacity: 1;
-    @include transition(opacity);
-
-    &.affix-top {
-      opacity: 0;
-    }
 
     a.navbar-brand img {
       height: 25px;

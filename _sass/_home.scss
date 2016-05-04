@@ -1,15 +1,26 @@
 #home-page {
   header {
     nav.navbar {
-      opacity: 0;
-      @include transition(opacity);
+      @include transition(background-color, 0.5s);
 
       &.affix-top {
-        opacity: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+
+        a.navbar-brand, .navbar-nav > li > a {
+          color: $light-color;
+
+          &:hover {
+            color: darken($light-color, 20%);
+
+            &.apply {
+              color: $dark-color;
+            }
+          }
+        }
       }
 
       &.affix {
-        opacity: 1;
+        background-color: $primary-color;
       }
     }
   }
