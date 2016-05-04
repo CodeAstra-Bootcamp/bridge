@@ -1,7 +1,7 @@
 $navbar-height: 50px;
 
 html, body {
-  color: $dark-color;
+  color: $dark-font-color;
 }
 
 body {
@@ -102,6 +102,25 @@ footer {
   h#{$i} {
     font-weight: $thin-font-weight;
   }
+}
+
+h1 {
+  font-size: 6rem;
+  color: $dark-color;
+}
+
+h2 {
+  font-size: 4rem;
+  color: $primary-color;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+p, li {
+  font-size: 1.6rem;
+  line-height: 2.8rem;
 }
 
 b, strong {

@@ -3,22 +3,43 @@ title: Curriculum
 permalink: /program/curriculum/
 layout: program
 ---
-<h1>Our Program</h1>
-<section id="learn">
-  <div class="container">
-    <h2>You'll learn</h2>
-    {% for skill in site.data.skills %}
-      <div class="skill row wow fadeIn">
-        <div class="logo-container">
-          <img src="/images/skills/{{skill.logo}}" alt="{{skill.name}}" class="img-responsive">
-        </div>
-        <div class="skill-info">
-          <h4>{{skill.name}}</h4>
-          <p>
-            {{skill.description}}
-          </p>
-        </div>
-      </div>
-    {% endfor %}
-  </div>
+<section id="curriculum">
+  <h1>Curriculum</h1>
+  <h2>Computational Concepts</h2>
+  <h3>Problem Solving</h3>
+  <p>
+    You will learn solving problems using computers. You will dive into data structures and algorithms using C and Java. You will also look into Object Oriented Programming and various Design Patterns to model your solutions to various problems. We will also give you assignments .Our mentors would be helping you solve the assignments.
+  </p>
+  <h3>Core Computer Concepts</h3>
+  <p>
+    You will be given access to Ravindra Babu's complete set of GATE videos on Operating Systems, Computer Networks and Database Management System.
+  </p>
+  <h3>Introduction to Machine Learning and Big Data</h3>
+  <p>
+    You will develop intelligent applications that use machine learning algorithms to derive intelligence from data. We will use Hadoop to handle big data.
+  </p>
+  <h2>Software Product Development</h2>
+  {% for skill in site.data.skills %}
+    <h3>{{skill.name}}</h3>
+    <p>
+      {{skill.description}}
+    </p>
+  {% endfor %}
+  <h2>Value Added Services</h2>
+  <h3>Aptitude</h3>
+  <p>
+    Cracking aptitude problems plays a major role in securing jobs. You get to practice aptitude problems, of course with the guidance of our mentors.
+  </p>
+  <h3>Communication Skills</h3>
+  <p>
+    In today’s competitive world, communication skill is a crucial component not only to get a job but also to maintain social and professional relationships.We help you get better by encouraging group discussions, presentations, talks and demos on your thoughts/ideas.
+  </p>
+  <h3>Resume Services</h3>
+  <p>
+    We will help you build a great and job winning resume.
+  </p>
+  <h3>Campus Hiring</h3>
+  <p>
+    The program culminates on graduation day, when we invite several product based companies to our campus. We guarantee that everyone who joined this program leave us with a job in their hand.
+  </p>
 </section>
