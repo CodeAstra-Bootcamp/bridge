@@ -1,7 +1,7 @@
 #home-page {
   header {
     nav.navbar {
-      @include transition(background-color, 0.5s);
+      @include animate(background-color, 0.5s);
 
       &.affix-top {
         background-color: rgba(0, 0, 0, 0.5);
@@ -55,7 +55,7 @@
       border: 1px solid $light-color;
       width: 55vmin;
       border-radius: 4px;
-      @include transition(background-color);
+      @include animate(background-color);
 
       &:hover {
         text-decoration: none;
@@ -110,7 +110,7 @@
       background-color: $primary-color;
       color: $light-color;
       width: 10em;
-      transition: background-color 0.3s ease-in;
+      @include animate(background-color);
 
       &:hover {
         background-color: $lighter-primary-color;

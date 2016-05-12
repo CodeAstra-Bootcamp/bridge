@@ -15,7 +15,7 @@
     background-color: $primary-color;
     border: 1px solid $primary-color;
     color: $light-color;
-    @include transition(background-color);
+    @include animate(background-color);
 
     &:hover {
       background-color: darken($primary-color, 5%);

@@ -2,9 +2,6 @@ $navbar-height: 50px;
 
 html, body {
   color: $dark-font-color;
-}
-
-body {
   background-color: $dark-color;
 }
 
@@ -26,7 +23,7 @@ header {
 
     a.navbar-brand, .navbar-nav > li > a {
       color: $light-color;
-      @include transition(color);
+      @include animate(color);
 
       &.apply {
         border: 1px solid $light-color;
@@ -34,7 +31,7 @@ header {
         padding: 5px 10px;
         margin: 10px 5px;
         background-color: $primary-color;
-        @include transition(background-color);
+        @include animate(background-color);
       }
 
       &:hover {
@@ -46,12 +43,22 @@ header {
       }
     }
   }
+
+  .alert {
+    margin-bottom: 0;
+    text-align: center;
+    border-radius: 0;
+  }
 }
 
 #main-content {
-  // This is required as the navbar is fixed-top
-  margin-top: $navbar-height;
-  background-color: $light-color;
+  .container, .container-fluid {
+    // This is required as the navbar is fixed-top
+    margin-top: $navbar-height;
+    background-color: $light-color;
+    min-height: 100vh;
+    padding-bottom: 3rem;
+  }
 }
 
 footer {
@@ -65,7 +72,7 @@ footer {
     a {
       color: $light-color;
       margin: 0 1em;
-      @include transition(color);
+      @include animate(color);
 
       &:hover {
         color: $primary-color;
@@ -100,7 +107,10 @@ footer {
 
 @for $i from 1 through 6 {
   h#{$i} {
-    font-weight: $thin-font-weight;
+    font-weight: $very-thin-font-weight;
+    text-transform: uppercase;
+    word-spacing: 0.4em;
+    letter-spacing: 0.05em;
   }
 }
 
@@ -125,4 +135,28 @@ p, li {
 
 b, strong {
   font-weight: $bold-font-weight;
+}
+
+.btn {
+  &.btn-outline {
+    &, &:hover {
+      color: $dark-color;
+      border: 1px solid $dark-color;
+      background-color: transparent;
+      @include animate(background-color, 0.3s);
+    }
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    &.btn-outline-inverse {
+      color: $light-color;
+      border-color: $light-color;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+    }
+  }
 }
