@@ -5,6 +5,9 @@ $light-color: #ecf0f1;
 $darker-light-color: #bdc3c7;
 $lighter-dark-color: lighten($dark-color, 5%);
 $dark-font-color: #686b6e;
+$navbar-translucent-bg-color: rgba(0, 0, 0, 0.5);
+$navbar-translucent-light-color: rgba(255, 255, 255, 0.3);
+$shadow-color: $navbar-translucent-bg-color;
 
 $font-family: 'Raleway', sans-serif;
 $very-thin-font-weight: 100;

@@ -4,9 +4,9 @@ RaudraApp = {}
 
 RaudraApp.Utils =
   affixNavBar: ->
-    $('#home-page header nav').affix
+    $('#home-page header').affix
       offset:
-        top: 100
+        top: 300
   initWowJs: ->
     new WOW().init()
   init: ->

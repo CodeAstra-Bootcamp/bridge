@@ -1,4 +1,4 @@
-$navbar-height: 50px;
+$navbar-height: 92px;
 
 html, body {
   color: $dark-font-color;
@@ -10,11 +10,45 @@ html, body {
 }
 
 header {
+  box-shadow: 0 10px 20px $shadow-color;
+
+  nav#topnav {
+    background-color: $dark-color;
+    height: auto;
+    overflow: hidden;
+    visibility: visible;
+    @include animate(height, 0.5s);
+
+    a {
+      font-size: 1.3rem;
+      line-height: 3em;
+      color: $light-color;
+      display: inline-block;
+
+      &:hover, &:focus, &:active {
+        text-decoration: none;
+      }
+    }
+
+    .social-icons {
+      a {
+        padding: 0 1em;
+        border-left: 1px solid $navbar-translucent-light-color;
+
+        &:last-child {
+          border-right: 1px solid $navbar-translucent-light-color;
+        }
+      }
+    }
+  }
+
   nav.navbar {
-    background-color: $primary-color;
+    background-color: $light-color;
     border-radius: 0;
     border-bottom: none;
     margin-bottom: 0;
+    border-color: transparent;
+    @include animate(all, 0.5s);
 
     a.navbar-brand img {
       height: 25px;
@@ -22,12 +56,13 @@ header {
     }
 
     a.navbar-brand, .navbar-nav > li > a {
-      color: $light-color;
+      color: $dark-color;
       @include animate(color);
 
       &.apply {
         border: 1px solid $light-color;
         border-radius: 4px;
+        color: $light-color;
         padding: 5px 10px;
         margin: 10px 5px;
         background-color: $primary-color;
@@ -35,10 +70,11 @@ header {
       }
 
       &:hover {
-        color: $dark-color;
+        color: mix($dark-color, $light-color, 70%);
 
         &.apply {
-          background-color: mix($primary-color, $light-color, 10%);
+          color: $light-color;
+          background-color: mix($primary-color, $light-color, 80%);
         }
       }
     }

@@ -1,26 +1,27 @@
 #home-page {
   header {
-    nav.navbar {
-      @include animate(background-color, 0.5s);
+    &.affix-top {
+      box-shadow: none;
 
-      &.affix-top {
-        background-color: rgba(0, 0, 0, 0.5);
+      nav#topnav {
+        height: 0px;
+        visibility: hidden;
+      }
+
+      nav.navbar {
+        background-color: $navbar-translucent-bg-color;
 
         a.navbar-brand, .navbar-nav > li > a {
           color: $light-color;
 
           &:hover {
-            color: darken($light-color, 20%);
+            color: $darker-light-color;
 
             &.apply {
-              color: $dark-color;
+              color: $light-color;
             }
           }
         }
-      }
-
-      &.affix {
-        background-color: $primary-color;
       }
     }
   }
