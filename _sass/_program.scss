@@ -1,24 +1,33 @@
 #program {
-  background-image: url('../images/semi-bg.jpg');
-  background-size: 100% auto;
-  border-bottom: 10px solid $light-color;
+  & > .container > .row {
+    position: relative;
+  }
 
   #sidebar {
-    background-color: $dark-color;
     padding: 2em 0;
 
+    nav {
+      position: fixed;
+
+      &.affix-bottom {
+        position: absolute;
+      }
+    }
+
     a {
-      color: $light-color;
+      color: $dark-color;
       display: block;
       font-weight: $normal-font-weight;
       padding: 0.2em 0.5em;
       background-color: transparent;
       border-left: 5px solid transparent;
-      @include animate(background-color);
+      border-color: transparent;
+      @include animate(border-color);
 
       &.active {
         &, &:hover {
-          background-color: $primary-color;
+          border-color: $primary-color;
+          color: $primary-color;
         }
       }
 
@@ -29,8 +38,7 @@
 
       &:hover, &:active, &:focus {
         text-decoration: none;
-        background-color: $lighter-dark-color;
-        border-left: 5px solid $primary-color;
+        border-color: $primary-color;
       }
     }
   }
@@ -38,6 +46,16 @@
   #program-content {
     background-color: $light-color;
     color: $dark-color;
+  }
+
+  @media (max-width: $screen-sm-max) {
+    #sidebar {
+      nav {
+        &, &.affix, &.affix-top, &.affix-bottom {
+          position: static;
+        }
+      }
+    }
   }
 }
 

@@ -7,10 +7,16 @@ RaudraApp.Utils =
     $('#home-page header').affix
       offset:
         top: 300
+  affixSideBar: ->
+    $('#program #sidebar nav').affix
+      offset:
+        top: 10
+        bottom: $('footer').height() + 50
   initWowJs: ->
     new WOW().init()
   init: ->
     RaudraApp.Utils.affixNavBar()
+    RaudraApp.Utils.affixSideBar()
     RaudraApp.Utils.initWowJs()
 
 RaudraApp.Apply =
