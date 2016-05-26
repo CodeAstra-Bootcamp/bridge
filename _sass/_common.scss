@@ -134,6 +134,16 @@ footer {
   text-align: center;
 }
 
+// This is required to make sure that in-page navigation doesn't place the content under the fixed navbar.
+// Ref: https://github.com/twbs/bootstrap/issues/1768
+.anchorable::before {
+  display: block;
+  content: " ";
+  margin-top: -($navbar-height + 25px);
+  height: $navbar-height + 25px; 
+  visibility: hidden;
+}
+
 @for $i from 1 through 6 {
   h#{$i} {
     font-weight: $very-thin-font-weight;
