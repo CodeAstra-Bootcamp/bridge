@@ -93,6 +93,7 @@
   }
 
   #summary {
+    background-color: #DEEBF3;
     padding: 10vh 0;
     text-align: center;
 
@@ -101,14 +102,54 @@
     }
 
     h2 {
-      font-size: 4vw;
+      font-size: 3em;
+      text-transform: uppercase;
+      color: $dark-color;
     }
 
-    p.tagline {
-      font-weight: $bold-font-weight;
+    h3 {
+      text-transform: uppercase;
       font-size: 1.5em;
-      margin: 2em 0;
+      height: 3em;
     }
+
+    .separator {
+      width: 15px;
+      height: 15px;
+      margin: 0 auto 2em;
+      transform: rotate(45deg);
+    }
+
+    .computational-skills {
+      .separator {
+        background-color: #EB5244;
+      }
+    }
+
+    .software-development {
+      .separator {
+        background-color: #073552;
+      }
+    }
+
+    .secure-job {
+      .separator {
+        background-color: #FBAD28;
+      }
+    }
+
+    .better-person {
+      .separator {
+        background-color: #99C6D1;
+      }
+    }
+
+    p {
+      &.tagline {
+        margin: 1em 0 3em;
+      }
+    }
+
   }
 
   .action-buttons {
