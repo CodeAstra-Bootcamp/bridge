@@ -65,21 +65,29 @@
   }
 
   #about {
-    background-image: url('../images/adventure.jpg');
+    background-image: url('../images/about-bg.jpg');
     background-size: cover;
     background-attachment: fixed;
 
     .vcenter {
-      background-color: rgba(0,0,0,0.6);
-      padding: 8vh 0;
+      text-align: left;
+
+      h2 {
+        width: 50%;
+        text-transform: uppercase;
+        color: $dark-color;
+      }
 
       p {
-        color: $light-color;
+        width: 50%;
+        color: $dark-color;
         font-weight: $thin-font-weight;
-        text-align: right;
-        font-size: 5vmin;
-        width: 80vw;
-        margin: 0 auto;
+        font-size: 1.5em;
+      }
+
+      a {
+        color: $light-color;
+        background-color: $dark-color;
       }
     }
   }
