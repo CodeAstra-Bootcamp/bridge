@@ -28,6 +28,16 @@
 }
 
 #home {
+  h2 {
+    font-size: 3em;
+    text-transform: uppercase;
+    color: $dark-color;
+  }
+
+  p.tagline {
+    margin: 1em 0 3em;
+  }
+
   #land {
     border: 1px solid transparent;
     background-image: url('../images/highway.jpg');
@@ -101,12 +111,6 @@
       height: 200px;
     }
 
-    h2 {
-      font-size: 3em;
-      text-transform: uppercase;
-      color: $dark-color;
-    }
-
     h3 {
       text-transform: uppercase;
       font-size: 1.5em;
@@ -143,13 +147,6 @@
         background-color: #99C6D1;
       }
     }
-
-    p {
-      &.tagline {
-        margin: 1em 0 3em;
-      }
-    }
-
   }
 
   .action-buttons {
@@ -172,6 +169,78 @@
         &:hover {
           background-color: $lighter-dark-color;
         }
+      }
+    }
+  }
+
+  #diversity {
+    background-color: $light-color;
+    padding: 3em 0;
+    text-align: center;
+
+    p.teaser {
+      margin: 3em 0 1em;
+    }
+
+    .education-background {
+      background-size: cover;
+      padding: 3em 1em;
+
+      h4 {
+        font-size: 3em;
+      }
+
+      p {
+        font-size: 1.5em;
+        color: $light-color;
+        font-weight: $very-thin-font-weight;
+      }
+
+      &.cs-background {
+        background: url('../images/home/diversity/cs-background.jpg');
+
+        h4 {
+          color: #3BC981;
+        }
+      }
+
+      &.non-cs-background {
+        background: url('../images/home/diversity/non-cs-background.jpg');
+
+        h4 {
+          color: #EB5244;
+        }
+      }
+    }
+
+    .academic-performance {
+      img {
+        height: 12em;
+        max-width: 100%;
+      }
+
+      p {
+        color: $light-color;
+        font-weight: $very-thin-font-weight;
+        font-size: 180%;
+        margin: -1em 0 1em;
+        white-space: nowrap;
+      }
+
+      &.topper {
+        background-color: #00C0E4;
+      }
+
+      &.mediocre {
+        background-color: #3BC981;
+      }
+
+      &.backbencher {
+        background-color: #E6567A;
+      }
+
+      &.dropout {
+        background-color: #7757F8;
       }
     }
   }
