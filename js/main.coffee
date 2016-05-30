@@ -11,7 +11,7 @@ RaudraApp.Utils =
     $('#program #sidebar nav').affix
       offset:
         top: 10
-        bottom: $('footer').height() + 50
+        bottom: $('footer').outerHeight() + 50
   scrollSpySideBar: ->
     $('body').scrollspy
       target: '#sidebar > nav'

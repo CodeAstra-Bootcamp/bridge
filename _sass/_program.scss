@@ -16,7 +16,7 @@
 
     li {
       a {
-        color: $dark-color;
+        color: $dark-font-color;
         display: block;
         font-weight: $normal-font-weight;
         padding: 0.2em 0.5em;
@@ -48,7 +48,7 @@
 
   #program-content {
     background-color: $light-color;
-    color: $dark-color;
+    color: $dark-font-color;
     position: relative;
   }
 
