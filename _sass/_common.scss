@@ -102,7 +102,12 @@ footer {
   color: $light-color;
   text-align: center;
   font-size: 0.9em;
-  padding: 1em 0;
+  font-weight: $very-thin-font-weight;
+  padding: 8em 0;
+  background: url('../images/footer-bg.jpg');
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
 
   nav {
     a {
@@ -119,6 +124,7 @@ footer {
 
   p {
     margin: 1.5em 0 1em;
+    font-size: 1em;
   }
 }
 
