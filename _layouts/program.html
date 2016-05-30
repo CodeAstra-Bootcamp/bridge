@@ -8,28 +8,29 @@ layout: default
         {{ content }}
       </div>
       <div id="sidebar" class="col-md-3 col-md-pull-9">
+        <h2>{{page.page.admissions_prefix}}</h2>
         <nav>
           <ul class="nav">
             <li>
               <a href="{{site.baseurl}}/program/" class="main-link active">Overview</a>
               <ul class="nav">
-                <li><a href="#overview-intro" class="sub-link">Intro</a></li>
-                <li><a href="#overview-whom-we-take" class="sub-link">Whom we take</a></li>
-                <li><a href="#overview-how-we-learn" class="sub-link">How we learn</a></li>
+                <li><a href="{{page.overview_prefix}}#overview-intro" class="sub-link">Intro</a></li>
+                <li><a href="{{page.overview_prefix}}#overview-whom-we-take" class="sub-link">Whom we take</a></li>
+                <li><a href="{{page.overview_prefix}}#overview-how-we-learn" class="sub-link">How we learn</a></li>
               </ul>
             </li>
             <li>
               <a href="{{site.baseurl}}/program/daily-life/" class="main-link">Daily Life</a>
               <ul class="nav">
-                <li><a href="#daily-life-intro" class="sub-link">Intro</a></li>
+                <li><a href="{{page.daily_life_prefix}}#daily-life-intro" class="sub-link">Intro</a></li>
               </ul>
             </li>
             <li>
               <a href="{{site.baseurl}}/program/curriculum/" class="main-link">Curriculum</a>
               <ul class="nav">
-                <li><a href="#curriculum-computational-concepts" class="sub-link">Computational Concepts</a></li>
-                <li><a href="#curriculum-software-product-development" class="sub-link">Software Product Development</a></li>
-                <li><a href="#curriculum-more" class="sub-link">More...</a></li>
+                <li><a href="{{page.curriculum_prefix}}#curriculum-computational-concepts" class="sub-link">Computational Concepts</a></li>
+                <li><a href="{{page.curriculum_prefix}}#curriculum-software-product-development" class="sub-link">Software Product Development</a></li>
+                <li><a href="{{page.curriculum_prefix}}#curriculum-more" class="sub-link">More...</a></li>
               </ul>
             </li>
             <li>
@@ -38,23 +39,23 @@ layout: default
             <li>
               <a href="{{site.baseurl}}/program/first-job/" class="main-link">Your First Job</a>
               <ul class="nav">
-                <li><a href="#first-job-what" class="sub-link">What job would I get?</a></li>
-                <li><a href="#first-job-who" class="sub-link">Who hires me?</a></li>
-                <li><a href="#first-job-salary" class="sub-link">Salary?</a></li>
+                <li><a href="{{page.first_job_prefix}}#first-job-what" class="sub-link">What job would I get?</a></li>
+                <li><a href="{{page.first_job_prefix}}#first-job-who" class="sub-link">Who hires me?</a></li>
+                <li><a href="{{page.first_job_prefix}}#first-job-salary" class="sub-link">Salary?</a></li>
               </ul>
             </li>
             <li>
               <a href="{{site.baseurl}}/program/admissions/" class="main-link">Admissions</a>
               <ul class="nav">
-                <li><a href="#admissions-intro" class="sub-link">Intro</a></li>
-                <li><a href="#admissions-process" class="sub-link">The Process</a></li>
+                <li><a href="{{page.admissions_prefix}}#admissions-intro" class="sub-link">Intro</a></li>
+                <li><a href="{{page.admissions_prefix}}#admissions-process" class="sub-link">The Process</a></li>
               </ul>
             </li>
             <li>
               <a href="{{site.baseurl}}/program/tuition/" class="main-link">Tuition</a>
               <ul class="nav">
-                <li><a href="#tuition-intro" class="sub-link">Intro</a></li>
-                <li><a href="#tuition-loan" class="sub-link">Loan Option</a></li>
+                <li><a href="{{page.tuition_prefix}}#tuition-intro" class="sub-link">Intro</a></li>
+                <li><a href="{{page.tuition_prefix}}#tuition-loan" class="sub-link">Loan Option</a></li>
               </ul>
             </li>
           </ul>
